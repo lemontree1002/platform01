@@ -4,8 +4,9 @@ MAINTAINER 	GaoKun <634834595@qq.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV VERSION 1.0.0
 
+# copy本地代码目录和目录下所有文件到docker
 WORKDIR /app
-COPY platform01 ./platform01
+COPY level-1 .
 
 # Preparation
 RUN \
@@ -13,8 +14,6 @@ RUN \
   apt-get update && apt-get install -yqq wget unzip php5-gd && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf app/* && \
-  cp -r /platform01/* /app && \
-  rm -rf /platform01 && \
   chmod a+w /app/level-1\Less-3\upload && \
   chmod a+r /app/level-1\Less-3\upload && \
   chmod a+r /app/level-1\Less-4\log && \
