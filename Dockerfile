@@ -14,9 +14,9 @@ RUN \
   apt-get update && apt-get install -yqq wget unzip php5-gd && \
   rm -rf /var/lib/apt/lists/* && \
   rm -rf app/* && \
-  chmod a+w /app/level-1\Less-3\upload && \
-  chmod a+r /app/level-1\Less-3\upload && \
-  chmod a+r /app/level-1\Less-4\log && \
+  chmod a+w /app/level-1/Less-3/upload && \
+  chmod a+r /app/level-1/Less-3/upload && \
+  chmod a+r /app/level-1/Less-4/log && \
 
 EXPOSE 80 3306
 CMD ["/run.sh"]
