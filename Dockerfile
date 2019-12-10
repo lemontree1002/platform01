@@ -10,7 +10,7 @@ COPY level-1 /app/level-1/
 
 # Preparation
 RUN \
-  cd /app/level-1/ \
+  cd /app/level-1/ && \
   rm -fr /app/* && \
   apt-get update && apt-get install -yqq wget unzip php5-gd && \
   rm -rf /var/lib/apt/lists/* && \
