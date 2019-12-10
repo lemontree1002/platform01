@@ -6,7 +6,7 @@ ENV VERSION 1.0.0
 
 # copy本地代码目录和目录下所有文件到docker
 WORKDIR /app
-COPY level-1 .
+COPY level-1 ./level-1
 
 # Preparation
 RUN \
