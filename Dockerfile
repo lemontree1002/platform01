@@ -4,9 +4,10 @@ MAINTAINER 	GaoKun <634834595@qq.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV VERSION 1.0.0
 
-# copy本地代码目录和目录下所有文件到docker
+# copy github代码目录和目录下所有文件到docker
+RUN mkdir /app/level-1
 WORKDIR /app
-COPY level-1 /app/level-1
+COPY level-1 ./level-1
 
 # Preparation
 RUN \
