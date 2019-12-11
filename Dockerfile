@@ -1,6 +1,8 @@
 FROM tutum/lamp:latest
 MAINTAINER 	GaoKun <634834595@qq.com>
 
+ENV DEBIAN_FRONTEND noninteractive
+
 WORKDIR /app
 COPY level-1 ./level-1/
 
