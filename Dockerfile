@@ -4,6 +4,7 @@ MAINTAINER 	GaoKun <634834595@qq.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 WORKDIR /app
+RUN rm -fr /app/*
 COPY level-1 ./level-1/
 COPY index.php .
 
