@@ -15,7 +15,7 @@ RUN \
   cd /app && \
   chmod a+w ./level-1/Less-3/upload && \
   chmod a+r ./level-1/Less-3/upload && \
-  chmod a+r ./level-1/Less-4/log &&\
+  chmod a+r ./level-1/Less-4/log
 
 EXPOSE 80 3306
 CMD ["/run.sh"]
