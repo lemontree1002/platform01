@@ -5,6 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 WORKDIR /app
 COPY level-1 ./level-1/
+COPY index.php .
 
 # Preparation
 RUN \
