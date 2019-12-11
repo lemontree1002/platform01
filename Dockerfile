@@ -1,16 +1,14 @@
 FROM tutum/lamp:latest
 MAINTAINER 	GaoKun <634834595@qq.com>
 
-ENV DEBIAN_FRONTEND noninteractive
-ENV VERSION 1.0.0
-
-RUN mkdir /level-1
+#RUN mkdir /level-1
 COPY level-1 /level-1/
 
 # Preparation
 RUN \
   cd /level-1 && \
-  apt-get update && apt-get install -yqq wget unzip php5-gd && \
+  apt-get update && \
+  apt-get install -yqq wget unzip php5-gd && \
   rm -rf /var/lib/apt/lists/* && \
   chmod a+w /level-1/Less-3/upload && \
   chmod a+r /level-1/Less-3/upload && \
